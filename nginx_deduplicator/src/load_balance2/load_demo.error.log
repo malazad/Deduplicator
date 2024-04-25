@@ -1,0 +1,151 @@
+2021/09/07 08:40:33 [debug] 68849#0: *1 http cl:19 max:1048576
+2021/09/07 08:40:33 [debug] 68849#0: *1 rewrite phase: 3
+2021/09/07 08:40:33 [debug] 68849#0: *1 post rewrite phase: 4
+2021/09/07 08:40:33 [debug] 68849#0: *1 generic phase: 5
+2021/09/07 08:40:33 [debug] 68849#0: *1 generic phase: 6
+2021/09/07 08:40:33 [debug] 68849#0: *1 generic phase: 7
+2021/09/07 08:40:33 [debug] 68849#0: *1 generic phase: 8
+2021/09/07 08:40:33 [debug] 68849#0: *1 access phase: 9
+2021/09/07 08:40:33 [debug] 68849#0: *1 access phase: 10
+2021/09/07 08:40:33 [debug] 68849#0: *1 access phase: 11
+2021/09/07 08:40:33 [debug] 68849#0: *1 post access phase: 12
+2021/09/07 08:40:33 [debug] 68849#0: *1 generic phase: 13
+2021/09/07 08:40:33 [debug] 68849#0: *1 generic phase: 14
+2021/09/07 08:40:33 [debug] 68849#0: *1 http client request body preread 19
+2021/09/07 08:40:33 [debug] 68849#0: *1 http request body content length filter
+2021/09/07 08:40:33 [debug] 68849#0: *1 http body new buf t:1 f:0 00007F934980829C, pos 00007F934980829C, size: 19 file: 0, size: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 http init upstream, client timer: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 kevent set event: 3: ft:-2 fl:0025
+2021/09/07 08:40:33 [debug] 68849#0: *1 http script copy: "Host"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http script var: "backends"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http script copy: "Connection"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http script copy: "close"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http script copy: "Content-Length"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http script var: "19"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http script copy: ""
+2021/09/07 08:40:33 [debug] 68849#0: *1 http proxy header: "User-Agent: curl/7.64.1"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http proxy header: "Accept: */*"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http proxy header: "Content-Type: application/x-www-form-urlencoded"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http proxy header:
+"POST /hash/100 HTTP/1.0
+Host: backends
+Connection: close
+Content-Length: 19
+User-Agent: curl/7.64.1
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+
+"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http cleanup add: 00007F934980EA90
+2021/09/07 08:40:33 [debug] 68849#0: *1 foo : ... 25
+2021/09/07 08:40:33 [debug] 68849#0: *1 stream socket 19
+2021/09/07 08:40:33 [debug] 68849#0: *1 connect to 127.0.0.1:7772, fd:19 #2
+2021/09/07 08:40:33 [debug] 68849#0: *1 kevent set event: 19: ft:-1 fl:0025
+2021/09/07 08:40:33 [debug] 68849#0: *1 kevent set event: 19: ft:-2 fl:0025
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream connect: -2
+2021/09/07 08:40:33 [debug] 68849#0: *1 posix_memalign: 00007F934A004280:128 @16
+2021/09/07 08:40:33 [debug] 68849#0: *1 event timer add: 19: 60000:575317343
+2021/09/07 08:40:33 [debug] 68849#0: *1 http finalize request: -4, "/hash/100?" a:1, c:2
+2021/09/07 08:40:33 [debug] 68849#0: *1 http request count:2 blk:0
+2021/09/07 08:40:33 [debug] 68849#0: *1 http run request: "/hash/100?"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream check client, write event:1, "/hash/100"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream request: "/hash/100?"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream send request handler
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream send request
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream send request body
+2021/09/07 08:40:33 [debug] 68849#0: *1 chain writer buf fl:0 s:169
+2021/09/07 08:40:33 [debug] 68849#0: *1 chain writer buf fl:1 s:19
+2021/09/07 08:40:33 [debug] 68849#0: *1 chain writer in: 00007F934980EB28
+2021/09/07 08:40:33 [debug] 68849#0: *1 writev: 188 of 188
+2021/09/07 08:40:33 [debug] 68849#0: *1 chain writer out: 0000000000000000
+2021/09/07 08:40:33 [debug] 68849#0: *1 event timer del: 19: 575317343
+2021/09/07 08:40:33 [debug] 68849#0: *1 event timer add: 19: 60000:575317343
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream request: "/hash/100?"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream dummy handler
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream request: "/hash/100?"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream process header
+2021/09/07 08:40:33 [debug] 68849#0: *1 malloc: 00007F9348016E00:4096
+2021/09/07 08:40:33 [debug] 68849#0: *1 recv: eof:0, avail:17, err:0
+2021/09/07 08:40:33 [debug] 68849#0: *1 recv: fd:19 17 of 4096
+2021/09/07 08:40:33 [debug] 68849#0: *1 http proxy status 200 "200 OK"
+2021/09/07 08:40:33 [debug] 68849#0: *1 recv: eof:0, avail:0, err:0
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream request: "/hash/100?"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream process header
+2021/09/07 08:40:33 [debug] 68849#0: *1 recv: eof:0, avail:218, err:0
+2021/09/07 08:40:33 [debug] 68849#0: *1 recv: fd:19 218 of 4079
+2021/09/07 08:40:33 [debug] 68849#0: *1 http proxy header: "Content-Type: text/html; charset=utf-8"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http proxy header: "Content-Length: 82"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http proxy header: "Server: Werkzeug/1.0.1 Python/3.8.1"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http proxy header: "Date: Tue, 07 Sep 2021 13:40:33 GMT"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http proxy header done
+2021/09/07 08:40:33 [debug] 68849#0: *1 HTTP/1.1 200 OK
+Server: nginx/1.21.0
+Date: Tue, 07 Sep 2021 13:40:33 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 82
+Connection: keep-alive
+
+2021/09/07 08:40:33 [debug] 68849#0: *1 write new buf t:1 f:0 00007F934980EE30, pos 00007F934980EE30, size: 162 file: 0, size: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 http write filter: l:0 f:0 s:162
+2021/09/07 08:40:33 [debug] 68849#0: *1 http cacheable: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 http proxy filter init s:200 h:0 c:0 l:82
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream process upstream
+2021/09/07 08:40:33 [debug] 68849#0: *1 pipe read upstream: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 pipe preread: 82
+2021/09/07 08:40:33 [debug] 68849#0: *1 pipe buf free s:0 t:1 f:0 00007F9348016E00, pos 00007F9348016E99, size: 82 file: 0, size: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 pipe length: 82
+2021/09/07 08:40:33 [debug] 68849#0: *1 posix_memalign: 00007F934980F000:4096 @16
+2021/09/07 08:40:33 [debug] 68849#0: *1 input buf #0
+2021/09/07 08:40:33 [debug] 68849#0: *1 pipe write downstream: 1
+2021/09/07 08:40:33 [debug] 68849#0: *1 pipe write downstream flush in
+2021/09/07 08:40:33 [debug] 68849#0: *1 http output filter "/hash/100?"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http copy filter: "/hash/100?"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http postpone filter "/hash/100?" 00007F934980EB38
+2021/09/07 08:40:33 [debug] 68849#0: *1 write old buf t:1 f:0 00007F934980EE30, pos 00007F934980EE30, size: 162 file: 0, size: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 write new buf t:1 f:0 00007F9348016E00, pos 00007F9348016E99, size: 82 file: 0, size: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 http write filter: l:0 f:0 s:244
+2021/09/07 08:40:33 [debug] 68849#0: *1 http copy filter: 0 "/hash/100?"
+2021/09/07 08:40:33 [debug] 68849#0: *1 pipe write downstream done
+2021/09/07 08:40:33 [debug] 68849#0: *1 event timer: 19, old: 575317343, new: 575317385
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream exit: 0000000000000000
+2021/09/07 08:40:33 [debug] 68849#0: *1 finalize http upstream request: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 finalize http proxy request
+2021/09/07 08:40:33 [debug] 68849#0: *1 free rr peer 3 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 close http upstream connection: 19
+2021/09/07 08:40:33 [debug] 68849#0: *1 free: 00007F934A004280, unused: 48
+2021/09/07 08:40:33 [debug] 68849#0: *1 event timer del: 19: 575317343
+2021/09/07 08:40:33 [debug] 68849#0: *1 reusable connection: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 http upstream temp fd: -1
+2021/09/07 08:40:33 [debug] 68849#0: *1 http output filter "/hash/100?"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http copy filter: "/hash/100?"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http postpone filter "/hash/100?" 00007FFEE0BF94B0
+2021/09/07 08:40:33 [debug] 68849#0: *1 write old buf t:1 f:0 00007F934980EE30, pos 00007F934980EE30, size: 162 file: 0, size: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 write old buf t:1 f:0 00007F9348016E00, pos 00007F9348016E99, size: 82 file: 0, size: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 write new buf t:0 f:0 0000000000000000, pos 0000000000000000, size: 0 file: 0, size: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 http write filter: l:1 f:0 s:244
+2021/09/07 08:40:33 [debug] 68849#0: *1 http write filter limit 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 writev: 244 of 244
+2021/09/07 08:40:33 [debug] 68849#0: *1 http write filter 0000000000000000
+2021/09/07 08:40:33 [debug] 68849#0: *1 http copy filter: 0 "/hash/100?"
+2021/09/07 08:40:33 [debug] 68849#0: *1 http finalize request: 0, "/hash/100?" a:1, c:1
+2021/09/07 08:40:33 [debug] 68849#0: *1 set http keepalive handler
+2021/09/07 08:40:33 [debug] 68849#0: *1 http close request
+2021/09/07 08:40:33 [debug] 68849#0: *1 http log handler
+2021/09/07 08:40:33 [debug] 68849#0: *1 free: 00007F9348016E00
+2021/09/07 08:40:33 [debug] 68849#0: *1 free: 00007F934980D000, unused: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 free: 00007F934980E000, unused: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 free: 00007F934980F000, unused: 3639
+2021/09/07 08:40:33 [debug] 68849#0: *1 free: 00007F9349808200
+2021/09/07 08:40:33 [debug] 68849#0: *1 hc free: 0000000000000000
+2021/09/07 08:40:33 [debug] 68849#0: *1 hc busy: 0000000000000000 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 tcp_nodelay
+2021/09/07 08:40:33 [debug] 68849#0: *1 reusable connection: 1
+2021/09/07 08:40:33 [debug] 68849#0: *1 event timer add: 3: 75000:575332385
+2021/09/07 08:40:33 [debug] 68849#0: *1 http empty handler
+2021/09/07 08:40:33 [debug] 68849#0: *1 http keepalive handler
+2021/09/07 08:40:33 [info] 68849#0: *1 kevent() reported that client 127.0.0.1 closed keepalive connection
+2021/09/07 08:40:33 [debug] 68849#0: *1 close http connection: 3
+2021/09/07 08:40:33 [debug] 68849#0: *1 event timer del: 3: 575332385
+2021/09/07 08:40:33 [debug] 68849#0: *1 reusable connection: 0
+2021/09/07 08:40:33 [debug] 68849#0: *1 free: 0000000000000000
+2021/09/07 08:40:33 [debug] 68849#0: *1 free: 00007F934A004080, unused: 136
